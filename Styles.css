@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    background-color: rgb(4, 13, 18);
+    font-family: "Roboto Mono", monospace;
+}
+
+.tela {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(4, 13, 18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.foto img {
+    display: block;
+    max-height: 50vh;
+    max-width: 70vw;
+    width: 100%;
+    height: auto;
+    border: 3vw solid rgb(24, 61, 61);
+    text-align: center;
+}
+
+.foto #nome,
+.foto #numero,
+.foto button,
+.foto .butaoPontos {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.foto #nome {
+    top: -10%;
+}
+
+.foto #numero {
+    top: 30%;
+}
+
+.foto button {
+    top: 110%;
+    position: fixed;
+    border-radius: 1rem;
+    color: rgb(147, 177, 166);
+    background-color: rgb(24, 61, 61);
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.foto .butaoPontos {
+    position: fixed;
+    top: 190%;
+    border-radius: 1rem;
+    color: rgb(147, 177, 166);
+    background-color: rgb(24, 61, 61);
+    padding: 0.5rem 1rem;
+}
+
+.foto form {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+hr {
+    opacity: 0;
+}
+
+#resultado {
+    color: white;
+}
+
+.centralizado {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Cadastro {
+    color: rgb(147, 177, 166);
+}
+
+#telajogo {
+    text-align: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cabecalho1 {
+    background-color: rgb(24, 61, 61);
+    color: rgb(147, 177, 166);
+    padding: 2rem;
+    text-align: center;
+}
+
+.rodape1 {
+    background-color: rgb(24, 61, 61);
+    color: rgb(147, 177, 166);
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.cadastro {
+    background-color: rgb(24, 61, 61);
+    color: rgb(147, 177, 166);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro input {
+    margin: 10px 0;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .foto img {
+        max-height: 40vh;
+        max-width: 90vw;
+    }
+
+    .foto #nome {
+        top: -15%;
+    }
+
+    .foto #numero {
+        top: 25%;
+    }
+
+    .foto button {
+        top: 110%;
+    }
+
+    .foto .butaoPontos {
+        top: 130%;
+    }
+
+    .cabecalho1,
+    .rodape1 {
+        padding: 1rem;
+    }
+
+    .cadastro {
+        width: 90%;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <title>Jogo de Adivinhação</title>
+</head>
+
+<body>
+
+    <div class="tela">
+        <div class="foto">
+            <img src="img/foto.avif" alt="fotinho">
+            <div class="Jogo">
+                <h5 id="resultado">.</h5>
+                <form class="centralizado">
+                    <input type="number" id="numero" placeholder="digite um número (1 a 100)" required>
+
+                    <button onclick="adivinhar();return false">Adivinhar</button><br><br>
+                    <button class="butaoPontos" onclick="exibirPontuacao()">Pontuação</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="Game.js"></script>
+</body>
+
+</html>
