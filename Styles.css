@@ -136,6 +136,18 @@ hr {
     width: 100%;
     box-sizing: border-box;
 }
+.cadastro button {
+    margin: 10px 0;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 30%;
+    box-sizing: border-box;
+    color: rgb(147, 177, 166);
+    background-color: rgb(4, 13, 18);
+    
+}
+
 
 @media (max-width: 768px) {
     .foto img {

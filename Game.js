@@ -1,6 +1,18 @@
 var pontuacao = 0;
 var Tentativas = 0;
 
+
+function Acessar() {
+    var nome = document.getElementById("nome").value.trim();
+
+    if (nome === "") {
+        alert("Insira seu nome para ter acesso ao jogo!");
+    } else {
+        window.location.href = "Jogo.html";
+    }
+
+}
+
 function adivinhar() {
     document.getElementById("resultado");
     var valorinserido = document.getElementById("numero").value;
@@ -27,3 +39,4 @@ function adivinhar() {
 function exibirPontuacao() {
     alert("Sua pontuação atual é: " + pontuacao);
 }
+
