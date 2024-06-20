@@ -7,7 +7,10 @@ function Acessar() {
     if (nome === "") {
         alert("Insira seu nome para ter acesso ao jogo!");
     } else {
-        window.location.href = "Jogo.html";
+        setTimeout(function () {
+            window.location.href = "Jogo.html";
+        }, 3000);
+
     }
 
 }
@@ -23,8 +26,11 @@ function adivinhar() {
         resultado.textContent = "PARABÉNS! O número que você adivinhou é: " + advinhacao + ". Tentativas: " + Tentativas;
         resultado.style.color = 'green';
         pontuacao += 10;
-        window.location.href = "Fim.html";
-        
+
+        setTimeout(function () {
+            window.location.href = "Fim.html";
+        }, 3000);
+
     } else {
 
         Tentativas += 1;
@@ -50,10 +56,11 @@ function exibirPontuacao() {
     alert("Sua pontuação atual é: " + pontuacao);
 }
 
-function denovo(){
-    window.location.href = "Jogo.html";
-}
+function denovo() {
 
-function novoPlayer(){
+        window.location.href = "Jogo.html";
+}
+function novoPlayer() {
     window.location.href = "Cadastro.html";
+
 }
