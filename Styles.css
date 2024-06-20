@@ -45,7 +45,7 @@ body {
 }
 
 .foto button {
-    top: 110%;
+    top: 90%;
     position: fixed;
     border-radius: 1rem;
     color: rgb(147, 177, 166);
@@ -57,7 +57,7 @@ body {
 
 .foto .butaoPontos {
     position: fixed;
-    top: 190%;
+    top: 170%;
     border-radius: 1rem;
     color: rgb(147, 177, 166);
     background-color: rgb(24, 61, 61);
@@ -149,7 +149,6 @@ hr {
     cursor: pointer;
     
 }
-
 
 @media (max-width: 768px) {
     .foto img {

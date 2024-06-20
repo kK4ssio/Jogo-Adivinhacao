@@ -12,10 +12,7 @@ function Acessar() {
 
 }
 
-var Tentativas = 0;
-var pontuacao = 0;
 var advinhacao = Math.floor(Math.random() * 100);
-
 function adivinhar() {
     var resultado = document.getElementById("resultado");
     var valorinserido = parseInt(document.getElementById("numero").value);
@@ -26,6 +23,8 @@ function adivinhar() {
         resultado.textContent = "PARABÉNS! O número que você adivinhou é: " + advinhacao + ". Tentativas: " + Tentativas;
         resultado.style.color = 'green';
         pontuacao += 10;
+        window.location.href = "Fim.html";
+        
     } else {
 
         Tentativas += 1;
@@ -47,7 +46,14 @@ function adivinhar() {
     }
 }
 
-
 function exibirPontuacao() {
     alert("Sua pontuação atual é: " + pontuacao);
+}
+
+function denovo(){
+    window.location.href = "Jogo.html";
+}
+
+function novoPlayer(){
+    window.location.href = "Cadastro.html";
 }
