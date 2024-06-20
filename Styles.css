@@ -136,6 +136,7 @@ hr {
     width: 100%;
     box-sizing: border-box;
 }
+
 .cadastro button {
     margin: 10px 0;
     border: none;
@@ -145,6 +146,7 @@ hr {
     box-sizing: border-box;
     color: rgb(147, 177, 166);
     background-color: rgb(4, 13, 18);
+    cursor: pointer;
     
 }
 
